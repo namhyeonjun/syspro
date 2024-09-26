@@ -2,7 +2,7 @@
 
 int main()
 {
-	printf("Hello! user!");
+	printf("Hello! My name is namhyeonjun!");
 	return 0;
 }
 
