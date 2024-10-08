@@ -32,7 +32,7 @@ main()
 		}
 	}
 
-	for(int i = 0; i<5; i++)
+	for(int i = 0; i<MAXLINES; i++)
 	{
 		printf("%s\n", line[i]);
 	}
