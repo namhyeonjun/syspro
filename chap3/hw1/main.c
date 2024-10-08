@@ -2,7 +2,7 @@
 #include <string.h>
 #include "copy.h"
 
-#define MAXLINES 100
+#define MAXLINES 5
 
 char line[MAXLINES][MAXLINE];
 char longest[MAXLINE];
@@ -12,15 +12,15 @@ main()
 	int max;
 	max = 0;
 
-	while(gets(longest) != NULL && max < MAXLINES)
+	while(max < MAXLINES && gets(longest)!= NULL)
 	{
 		copy(longest, line[max]);
 		max++;
 	}
 
-	for(int i = 0; i < max - 1; i++)
+	for(int i = 0; i < 5 - 1; i++)
 	{
-		for(int j = 0; j < max -1 ; j++)
+		for(int j = 0; j < 5 -1 ; j++)
 		{
 			if(strlen(line[j]) < strlen(line[j + 1]))
 			{
@@ -32,7 +32,7 @@ main()
 		}
 	}
 
-	for(int i = 0; i<max; i++)
+	for(int i = 0; i<5; i++)
 	{
 		printf("%s\n", line[i]);
 	}
