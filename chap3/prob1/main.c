@@ -20,8 +20,10 @@ main()
 			copy(line, longest);
 		}
 	}
-	if(max > 0)
-		printf("%s \n", longest);
 
+	if(max > 0)
+	{
+		printf("%s\n", longest);
+	}
 	return 0;
 }
