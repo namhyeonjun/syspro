@@ -18,9 +18,9 @@ main()
 		max++;
 	}
 
-	for(int i = 0; i < 5 - 1; i++)
+	for(int i = 0; i < MAXLINES - 1; i++)
 	{
-		for(int j = 0; j < 5 -1 ; j++)
+		for(int j = 0; j < MAXLINES - 1 ; j++)
 		{
 			if(strlen(line[j]) < strlen(line[j + 1]))
 			{
