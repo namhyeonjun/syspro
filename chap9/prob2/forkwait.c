@@ -15,6 +15,6 @@ int main()
 		exit(1);
 	}
 	child = wait(&status);
-	printf("[%d] Child Process %d end", child);
+	printf("[%d] Child Process %d end\n", child);
 	printf("\t end code %d\n", status>>8);
 }

@@ -4,7 +4,7 @@
 int main()
 {
 	int pid;
-	pid = fork()
+	pid = fork();
 	if (pid == 0)
 	{
 		printf("[Child] : Hello, world pid = %d\n", getpid());

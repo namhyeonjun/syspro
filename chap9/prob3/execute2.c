@@ -13,15 +13,15 @@ int main()
 	}
 	if(fork() == 0)
 	{
-		execl("bin/date", "date", NULL);
+		execl("/bin/date", "date", NULL);
 		fprintf(stderr, "Second Failure");
 		exit(2);
 	}
 	if (fork() == 0)
 	{
-		execl("bin/ls", "ls", "-l", NULL);
+		execl("/bin/ls", "ls", "-l", NULL);
 		fprintf(stderr, "Third  Failure");
-		exit(3)
+		exit(3);
 	}
 	printf("Parental Process End\n");
 }

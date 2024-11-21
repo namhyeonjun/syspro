@@ -14,6 +14,7 @@ int main()
 	if(pid2 == 0)
 	{
 		printf("[Child 2] : Hello, world ! pid = %d\n", getpid());
+		exit(0);
 	}
 	printf("[PARENT] : Hello, world ! pid = %d\n", getpid());
 }
